@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ana Sayfa</title>
+    <link rel="icon" href="/src/images/logo.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/src/output.css" />
+  </head>
+  <body
+    class="relative !w-screen bg-white max-w-[100vw] overflow-x-hidden"
+  >
+    <header
+      class="fixed top-0 flex items-center h-full -translate-x-1/2 justify-between left-1/2 max-h-[80px] z-50 w-full max-w-[1140px] xl:px-0 px-4 xs:px-12 overflow-hidden"
+    >
+      <a href="/" class="w-fit">
+        <img src="/src/img/Logo.svg" alt="Logo" />
+      </a>
+      <div class="cursor-pointer lg:hidden burgerIcon">
+        <svg class="size-5 fill-white" viewBox="0 0 256 256">
+          <path
+            d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+          ></path>
+        </svg>
+      </div>
+
+      <div
+        class="hidden lg:flex gap-4 lg:gap-8 items-center text-white text-sm lg: *:opacity-70 *:hover:opacity-100 *:transition-all"
+      >
+        <a
+          href="#"
+          class="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1.5px] after:w-full after:origin-bottom after:scale-x-0 after:bg-gray-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100"
+          >CORPORATE</a
+        >
+        <a
+          href="#"
+          class="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1.5px] after:w-full after:origin-bottom after:scale-x-0 after:bg-gray-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100"
+          >BUSINESS SECTOR</a
+        >
+        <a
+          href="#"
+          class="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1.5px] after:w-full after:origin-bottom after:scale-x-0 after:bg-gray-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100"
+          >BRANDS</a
+        >
+        <a
+          href="#"
+          class="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1.5px] after:w-full after:origin-bottom after:scale-x-0 after:bg-gray-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100"
+          >INQUIRY</a
+        >
+        <a
+          href="#"
+          class="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1.5px] after:w-full after:origin-bottom after:scale-x-0 after:bg-gray-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100"
+          >CAREER</a
+        >
+        <a
+          href="#"
+          class="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1.5px] after:w-full after:origin-bottom after:scale-x-0 after:bg-gray-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100"
+          >CONTACT US</a
+        >
+      </div>
+      <div class="items-center hidden gap-4 lg:flex">
+        <div>
+          <svg class="size-5 fill-white" viewBox="0 0 256 256">
+            <path
+              d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+            ></path>
+          </svg>
+        </div>
+        <div class="w-8 lg:w-12 h-[0.5px] bg-gray-300"></div>
+
+        <div class="inline-flex gap-2">
+          <svg class="size-5 fill-white" viewBox="0 0 256 256">
+            <path
+              d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"
+            ></path>
+          </svg>
+          <svg class="size-5 fill-white" viewBox="0 0 256 256">
+            <path
+              d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </header>
+    <main
+      class="relative flex items-end w-screen min-h-screen py-20 overflow-hidden"
+    >
+      <img
+        src="/src/img/Arka.png"
+        class="absolute top-0 left-0 object-cover object-center w-full h-full"
+        alt=""
+      />
+      <div
+        class="xl:mx-auto max-w-[1440px] flex justify-start items-end w-full xs:px-12 px-4 md:px-[100px] lg:px-[150px] relative z-20"
+      >
+        <div
+          class="flex flex-col pb-50 h-fit max-w-[840px] relative z-10 w-full gap-6"
+        >
+          <div
+            class="absolute left-0 -top-[209px] w-[1px] bg-[#B5D88B] h-[125px] z-20"
+          ></div>
+          <h3
+            class="text-[#4E87C7] text-3xl md:text-[54px] font-extralight w-fit"
+          >
+            Quis <br />
+            dictum urna venenatis
+          </h3>
+          <p
+            class="text-white text-[15px] font-sf leading-loose font-normal w-fit"
+          >
+            Ut at purus, ut facilisi eget nulla vivamus nullam. Volutpat est
+            lectus massa consectetur dictum lorem amet, enim nec. Ac dui, vitae
+            vulputate odio mattis quam nisi, amet pellentesque. Quam mauris in
+            tellus viverra hac diam vel, tellus tortor. Lacus commodo sit non
+            elementum dictum laoreet. Et sed volutpat nibh laoreet porttitor
+            faucibus.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <section
+      class="bg-[url('./coco.jpg')] bg-no-repeat bg-cover flex justify-center pt-10 items-center lg:pt-45 mx-auto md:h-[110vh]"
+    >
+      <div
+        class="flex flex-col lg:justify-center lg:pt-25 items-center md:items-end mx-auto lg:container px-[15px]"
+      >
+        <h3
+          class="text-[#4E87C7] text-4xl pb-9 pt-2 md:mx-auto ml-2 lg:w-screen xl:mx-20 lg:text-right lg:mx-10 xl:pl-12 md:mt-12"
+        >
+          Who Are We
+        </h3>
+
+        <p
+          class="text-[#FFFFFF] text-[19px] text-center mx-10 lg:mb-8 lg:text-right xl:px-12 leading-relaxed pb-5 leading-loose md:text-[19px]"
+        >
+          Tellus aliquet id non auctor scelerisque. Lacus, lorem purus elit,
+          adipiscing quis dolor. Fermentum, lectus nunc auctor risus eu est
+          mauris id faucibus. Tellus aliquet id non auctor scelerisque.. Lacus,
+          lorem purus elit, adipiscing quis dolor.
+        </p>
+
+        <div
+          class="flex flex-col items-center pb-10 mx-auto mb-12 space-y-8 lg:flex-row lg:space-y-0 xl:mt-20 lg:space-x-8 xl:space-x-28 md:flex-col"
+        >
+          <img
+            src="brandlogo.svg"
+            class="w-[200px] md:w-[250px] mt-12 lg:w-[200px] lg:mt-0"
+            alt=""
+          />
+          <img
+            src="brandlogo.svg"
+            class="w-[200px] md:w-[250px] lg:w-[200px]"
+            alt=""
+          />
+          <img
+            src="brandlogo.svg"
+            class="w-[200px] md:w-[250px] lg:w-[200px]"
+            alt=""
+          />
+          <img
+            src="brandlogo.svg"
+            class="w-[200px] md:w-[250px] lg:w-[200px]"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-[url('./coco.jpg')] bg-no-repeat bg-cover flex justify-center pt-5 items-center mx-auto md:h-[120vh]"
+    >
+      <div
+        class="container mx-auto p-4 flex flex-col md:flex-row flex-col-reverse max-w-[900px]"
+      >
+        <!-- Grid Kapsayıcı: Mobilde tam genişlik, md ve üstü ekranlarda 600px genişlikte -->
+        <div
+          class="grid md:grid-cols-2 gap-0 md:w-full md:w-[600px] mx-auto space-y-5 md:space-y-0"
+        >
+          <!-- Kart 1 -->
+          <div
+            class="relative bg-cover bg-center max-w-[300px] md:w-full h-[200px] flex items-end justify-start p-4 cursor-pointer bg-[url(./Img/Item.png)]"
+          >
+            <div class="absolute inset-0 bg-black/0"></div>
+            <div class="relative z-10">
+              <h3 class="mb-1 text-lg text-white">Tradex Petrolium</h3>
+              <a
+                href="#"
+                class="text-sm text-white no-underline border-b border-white"
+                >VIEW MORE</a
+              >
+            </div>
+          </div>
+          <!-- Kart 2 -->
+          <div
+            class="relative bg-cover bg-center max-w-[300px] md:w-full h-[200px] flex items-end justify-start p-4 cursor-pointer bg-[url(./Img/Item-1.png)]"
+          >
+            <div class="absolute inset-0 bg-black/0"></div>
+            <div class="relative z-10">
+              <h3 class="mb-1 text-lg text-white">Tradex FMCG</h3>
+              <a
+                href="#"
+                class="text-sm text-white no-underline border-b border-white"
+                >VIEW MORE</a
+              >
+            </div>
+          </div>
+          <!-- Kart 3 -->
+          <div
+            class="relative bg-cover bg-center max-w-[300px] md:w-full h-[200px] flex items-end justify-start p-4 cursor-pointer bg-[url(./Img/Item-2.png)]"
+          >
+            <div class="absolute inset-0 bg-black/0"></div>
+            <div class="relative z-10">
+              <h3 class="mb-1 text-lg text-white">Tradex Automotive</h3>
+              <a
+                href="#"
+                class="text-sm text-white no-underline border-b border-white"
+                >VIEW MORE</a
+              >
+            </div>
+          </div>
+          <!-- Kart 4 -->
+          <div
+            class="relative bg-cover bg-center max-w-[300px] md:w-full h-[200px] flex items-end justify-start p-4 cursor-pointer bg-[url(./Img/Item-3.png)]"
+          >
+            <div class="absolute inset-0 bg-black/0"></div>
+            <div class="relative z-10">
+              <h3 class="mb-1 text-lg text-white">Tradex Textile</h3>
+              <a
+                href="#"
+                class="text-sm text-white no-underline border-b border-white"
+                >VIEW MORE</a
+              >
+            </div>
+          </div>
+          <!-- Kart 5 -->
+          <div
+            class="relative bg-cover bg-center max-w-[300px] md:w-full h-[200px] flex items-end justify-start p-4 cursor-pointer bg-[url(./Img/Item-4.png)]"
+          >
+            <div class="absolute inset-0 bg-black/0"></div>
+            <div class="relative z-10">
+              <h3 class="mb-1 text-lg text-white">
+                Tradex Technology Solution
+              </h3>
+              <a
+                href="#"
+                class="text-sm text-white no-underline border-b border-white"
+                >VIEW MORE</a
+              >
+            </div>
+          </div>
+          <!-- Kart 6 -->
+          <div
+            class="relative bg-cover bg-center max-w-[300px] md:w-full h-[200px] flex items-end justify-start p-4 cursor-pointer bg-[url(./Img/Item-5.png)]"
+          >
+            <div class="absolute inset-0 bg-black/0"></div>
+            <div class="relative z-10">
+              <h3 class="mb-1 text-lg text-white">Tradex Medical</h3>
+              <a
+                href="#"
+                class="text-sm text-white no-underline border-b border-white"
+                >VIEW MORE</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar: Mobilde tam genişlik, md'de 300px, lg'de aynı kalabilir veya isteğe bağlı -->
+        <div
+          class="min-w-[381] md:w-[380px] md:bg-[url(./img/bar.png)] flex flex-col items-center justify-center"
+        >
+          <h2
+            class="text-[#2aa6ff] mb-2 text-[38px] lg:pl-53 min-w-60 md:px-5 text-center md:pl-53 md:text-right lg:text-right mb-6"
+          >
+            Our <br />Brands
+          </h2>
+          <p
+            class="mb-6 text-center text-white lg:text-right min-w-60 lg:px-6 md:text-right md:px-5"
+          >
+            Tellus aliquet id non auctor scelerisque. Lacus, lorem purus elit,
+            adipiscing quis dolor Fermentum, lectus nunc auctor risus eu est
+            mauris id faucibus. Tellus aliquet id non auctor scelerisque..
+            Lacus, lorem purus elit, adipiscing quis dolor.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div
+      class="fixed inset-0 z-50 flex bg-black/20 backdrop-grayscale backdrop-blur-sm -translate-x-[105%] transition-all duration-500 ease-in-out burgerMenu"
+    >
+      <div
+        class="flex items-center justify-center p-3 bg-linear-to-r from-green-600 via-blue-600 to-emerald-600 rounded-b-md closeMenu"
+      >
+        <svg
+          class="absolute cursor-pointer size-6 fill-white top-12 right-6"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+          ></path>
+        </svg>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center h-full overflow-y-auto"
+      >
+        <a
+          href="#"
+          class="w-full py-3 mb-6 text-xl text-center text-white transition-all focus:bg-gray-100 focus:font-bold focus:tracking-wide focus:text-gray-800"
+          >CORPORATE</a
+        >
+        <a
+          href="#"
+          class="w-full py-3 mb-6 text-xl text-center text-white transition-all focus:bg-gray-100 focus:font-bold focus:tracking-wide focus:text-gray-800"
+          >BUSINESS SECTOR</a
+        >
+        <a
+          href="#"
+          class="w-full py-3 mb-6 text-xl text-center text-white transition-all focus:bg-gray-100 focus:font-bold focus:tracking-wide focus:text-gray-800"
+          >BRANDS</a
+        >
+        <a
+          href="#"
+          class="w-full py-3 mb-6 text-xl text-center text-white transition-all focus:bg-gray-100 focus:font-bold focus:tracking-wide focus:text-gray-800"
+          >INQUIRY</a
+        >
+        <a
+          href="#"
+          class="w-full py-3 mb-6 text-xl text-center text-white transition-all focus:bg-gray-100 focus:font-bold focus:tracking-wide focus:text-gray-800"
+          >CAREER</a
+        >
+        <a
+          href="#"
+          class="w-full py-3 mb-6 text-xl text-center text-white transition-all focus:bg-gray-100 focus:font-bold focus:tracking-wide focus:text-gray-800"
+          >CONTACT US</a
+        >
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,225 @@
+ <section class="bg-[url('./coco.jpg')] bg-no-repeat bg-cover flex justify-center pt-10 items-center  lg:pt-45     mx-auto md:h-[110vh]">
+
+      <div class="flex w-[90%] max-w-[1200px]">
+        <!-- Grid Bölümü: %70 genişlik, boşluk yok -->
+        <div class="grid grid-cols-2 gap-0 w-[70%]">
+          <!-- Card 1 -->
+          <div
+            class="relative bg-cover bg-center h-[180px] flex items-end justify-start p-[15px] cursor-pointer"
+            style="background-image: url('img/bahar.jpeg');"
+          >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10">
+              <h3 class="text-lg mb-[5px]">Tradex Petrolium</h3>
+              <a
+                href="#"
+                class="text-white no-underline text-sm border-b border-white"
+                >VIEW MORE</a
+              >
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="relative bg-cover bg-center h-[180px] flex items-end justify-start p-[15px] cursor-pointer"
+            style="background-image: url('img/bahar.jpeg');"
+          >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10">
+              <h3 class="text-lg mb-[5px]">Tradex FMCG</h3>
+              <a
+                href="#"
+                class="text-white no-underline text-sm border-b border-white"
+                >VIEW MORE</a
+              >
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="relative bg-cover bg-center h-[180px] flex items-end justify-start p-[15px] cursor-pointer"
+            style="background-image: url('img/bahar.jpeg');"
+          >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10">
+              <h3 class="text-lg mb-[5px]">Tradex Automotive</h3>
+              <a
+                href="#"
+                class="text-white no-underline text-sm border-b border-white"
+                >VIEW MORE</a
+              >
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="relative bg-cover bg-center h-[180px] flex items-end justify-start p-[15px] cursor-pointer"
+            style="background-image: url('img/bahar.jpeg');"
+          >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10">
+              <h3 class="text-lg mb-[5px]">Tradex Textile</h3>
+              <a
+                href="#"
+                class="text-white no-underline text-sm border-b border-white"
+                >VIEW MORE</a
+              >
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div
+            class="relative bg-cover bg-center h-[180px] flex items-end justify-start p-[15px] cursor-pointer"
+            style="background-image: url('img/bahar.jpeg');"
+          >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10">
+              <h3 class="text-lg mb-[5px]">Tradex Technology Solution</h3>
+              <a
+                href="#"
+                class="text-white no-underline text-sm border-b border-white"
+                >VIEW MORE</a
+              >
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div
+            class="relative bg-cover bg-center h-[180px] flex items-end justify-start p-[15px] cursor-pointer"
+            style="background-image: url('img/bahar.jpeg');"
+          >
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10">
+              <h3 class="text-lg mb-[5px]">Tradex Medical</h3>
+              <a
+                href="#"
+                class="text-white no-underline text-sm border-b border-white"
+                >VIEW MORE</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar Bölümü: %30 genişlik -->
+        <div class="w-[30%] p-5 bg-[#222]">
+          <h2 class="text-[#2aa6ff] mb-[10px]">Our Brands</h2>
+          <p>
+            Tellus aliquet id non auctor scelerisque. Lacus, lorem purus elit,
+            adipiscing quis dolor. Fermentum, lectus nunc auctor risus eu est mauris
+            id faucibus.
+          </p>
+        </div>
+      </div>
+      
+    </section>
+
+
+
+
+
+
+
+
+
+
+<section class="bg-[url('./coco.jpg')] bg-no-repeat bg-cover flex justify-center pt-10 items-center      mx-auto md:h-[110vh]">
+    
+        <div class="container mx-auto p-4 flex flex-col md:flex-row  max-w-[900px]">
+          <!-- Grid Kapsayıcı: Mobilde tam genişlik, md ve üstü ekranlarda 600px genişlikte -->
+          <div class="grid grid-cols-2 gap-0 w-full md:w-[600px]">
+            <!-- Kart 1 -->
+            <div
+              class="relative bg-cover bg-center w-full h-[200px] flex items-end justify-start p-4 cursor-pointer  bg-[url(./Img/Item.png)] "
+    
+            >
+              <div class="absolute inset-0 bg-black/50"></div>
+              <div class="relative z-10">
+                <h3 class="text-lg mb-1 text-white   ">Tradex Petrolium</h3>
+                <a
+                  href="#"
+                  class="text-white no-underline text-sm border-b border-white"
+                  >VIEW MORE</a
+                >
+              </div>
+            </div>
+            <!-- Kart 2 -->
+            <div
+              class="relative bg-cover bg-center w-full h-[200px] flex items-end justify-start p-4 cursor-pointer  bg-[url(./Img/Item-1.png)] "
+              
+            >
+              <div class="absolute inset-0 bg-black/50"></div>
+              <div class="relative z-10">
+                <h3 class="text-lg mb-1 text-white  ">Tradex FMCG</h3>
+                <a
+                  href="#"
+                  class="text-white no-underline text-sm border-b border-white"
+                  >VIEW MORE</a
+                >
+              </div>
+            </div>
+            <!-- Kart 3 -->
+            <div
+              class="relative bg-cover bg-center w-full h-[200px] flex items-end justify-start p-4 cursor-pointer bg-[url(./Img/Item-2.png)]  "
+              
+            >
+              <div class="absolute inset-0 bg-black/50"></div>
+              <div class="relative z-10">
+                <h3 class="text-lg mb-1  text-white  ">Tradex Automotive</h3>
+                <a
+                  href="#"
+                  class="text-white no-underline text-sm border-b border-white"
+                  >VIEW MORE</a
+                >
+              </div>
+            </div>
+            <!-- Kart 4 -->
+            <div
+              class="relative bg-cover bg-center w-full h-[200px] flex items-end justify-start p-4 cursor-pointer bg-[url(./Img/Item-3.png)] "
+              
+            >
+              <div class="absolute inset-0 bg-black/50"></div>
+              <div class="relative z-10">
+                <h3 class="text-lg mb-1  text-white  ">Tradex Textile</h3>
+                <a
+                  href="#"
+                  class="text-white no-underline text-sm border-b border-white"
+                  >VIEW MORE</a
+                >
+              </div>
+            </div>
+            <!-- Kart 5 -->
+            <div
+              class="relative bg-cover bg-center w-full h-[200px] flex items-end justify-start p-4 cursor-pointer bg-[url(./Img/Item-4.png)]  "
+              
+            >
+              <div class="absolute inset-0 bg-black/50"></div>
+              <div class="relative z-10">
+                <h3 class="text-lg mb-1  text-white     ">Tradex Technology Solution</h3>
+                <a
+                  href="#"
+                  class="text-white no-underline text-sm border-b border-white"
+                  >VIEW MORE</a
+                >
+              </div>
+            </div>
+            <!-- Kart 6 -->
+            <div
+              class="relative bg-cover bg-center w-full h-[200px] flex items-end justify-start p-4 cursor-pointer bg-[url(./Img/Item-5.png)]  "
+              
+            >
+              <div class="absolute inset-0 bg-black/50"></div>
+              <div class="relative z-10">
+                <h3 class="text-lg mb-1    text-white       ">Tradex Medical</h3>
+                <a
+                  href="#"
+                  class="text-white no-underline text-sm border-b border-white"
+                  >VIEW MORE</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Sidebar: Mobilde tam genişlik, md'de 300px, lg'de aynı kalabilir veya isteğe bağlı -->
+          <div class="min-w-[381] md:w-[380px]  bg-[#222]  flex flex-col items-center justify-center  ">
+            <h2 class="text-[#2aa6ff] mb-2 text-[38px] pl-53 text-right  mb-6 ">Our <br>Brands</h2>
+            <p  class="text-white text-right min-w-90 px-4   " >
+              Tellus aliquet id non auctor scelerisque. Lacus, lorem purus elit, adipiscing quis dolor Fermentum, lectus nunc auctor risus eu est mauris id faucibus. Tellus aliquet id non auctor scelerisque.. Lacus, lorem purus elit, adipiscing quis dolor.
+            </p>
+          </div>
+        </div>
+      </section>
+     
+    
