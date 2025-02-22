@@ -4,499 +4,212 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tradexinv</title>
-    <style></style>
-    <link
-      href="https://fonts.cdnfonts.com/css/sf-pro-display"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <style>
       @import url("https://fonts.cdnfonts.com/css/sf-pro-display");
 
+      
+
       @media (max-width: 380px) {
-        /* Burada Tailwind sınıflarını özel CSS ile kombinleyebilirsin */
-        .coco {
-          font-size: 12px;
-        }
-        .caca {
-          font-size: 17px;
-        }
+        .coco { font-size: 12px; }
+        .caca { font-size: 17px; }
       }
       @media (max-width: 767px) {
-        .orti {
-          margin-left: 20px;
-          margin-right: 20px;
-        }
+        .orti { margin-left: 20px; margin-right: 20px; }
       }
       @media (max-width: 626px) {
-        .buyt {
-          width: 345px;
-          
-        }
+        .buyt { width: 345px; }
       }
       @media (max-width: 330px) {
-        .buyt {
-          width: 15.625rem;
-        }
+        .buyt { width: 15.625rem; }
       }
-
       @media (max-width: 450px) {
-        .sad {
-          width: 250px;
-        }
+        .sad { width: 250px; }
       }
       @media (max-width: 480px) {
-        .sad {
-          width: 260px;
-        }
+        .sad { width: 260px; }
       }
       @media (max-width: 656px) {
-        .sad {
-          width: 260px;
-        }
+        .sad { width: 260px; }
       }
       @media (max-width: 590px) {
-        .kase{
-          font-size: 
-        }
+        .kase { font-size: 16px; }
       }
-
-      .menu-open {
-        overflow: hidden;
-      }
-      .font-sf {
-        font-family: "SF Pro Display", sans-serif;
-      }
-
-      /* responsive 312 */
+      .menu-open { overflow: hidden; }
     </style>
   </head>
   <body>
-    <main
-      class="bg-[url('./arka.png')] bg-no-repeat max-w-full bg-cover h-[100vh]"
-    >
-      <nav
-        class="flex items-center justify-between px-10 py-12 mx-auto xl:px-24 lg:justify-between lg:container"
-      >
-        <div>
-          <img src="img/logo.svg" alt="Logo" />
-        </div>
-        <div
-          class="cursor-pointer lg:hidden"
-          id="burgerIcon"
-          onclick="toggleMenu()"
-        >
+    <main class="bg-[url('./arka.png')] bg-no-repeat max-w-full bg-cover h-[100vh]">
+      <nav class="flex items-center justify-between px-10 py-12 mx-auto xl:px-24 lg:justify-between lg:container">
+        <div><img src="img/logo.svg" alt="Logo" /></div>
+        <div class="cursor-pointer lg:hidden" id="burgerIcon" onclick="toggleMenu()">
           <svg class="size-5 fill-white" viewBox="0 0 256 256">
-            <path
-              d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
-            ></path>
+            <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
           </svg>
         </div>
-
-        <div
-          class="hidden lg:flex gap-4 lg:gap-8 items-center text-white kase  text-sm lg: *:opacity-70 *:hover:opacity-100 *:transition-all"
-        >
-          <a
-            href="#"
-            class="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1.5px] after:w-full after:origin-bottom after:scale-x-0 after:bg-gray-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100"
-            >CORPORATE</a
-          >
-          <a
-            href="#"
-            class="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1.5px] after:w-full after:origin-bottom after:scale-x-0 after:bg-gray-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100"
-            >BUSINESS SECTOR</a
-          >
-          <a
-            href="#"
-            class="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1.5px] after:w-full after:origin-bottom after:scale-x-0 after:bg-gray-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100"
-            >BRANDS</a
-          >
-          <a
-            href="#"
-            class="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1.5px] after:w-full after:origin-bottom after:scale-x-0 after:bg-gray-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100"
-            >INQUIRY</a
-          >
-          <a
-            href="#"
-            class="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1.5px] after:w-full after:origin-bottom after:scale-x-0 after:bg-gray-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100"
-            >CAREER</a
-          >
-          <a
-            href="#"
-            class="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1.5px] after:w-full after:origin-bottom after:scale-x-0 after:bg-gray-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100"
-            >CONTACT US</a
-          >
+        <div class="hidden lg:flex gap-4 lg:gap-8 items-center text-white kase text-sm lg: *:opacity-70 *:hover:opacity-100 *:transition-all">
+          <a href="#" class="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1.5px] after:w-full after:origin-bottom after:scale-x-0 after:bg-gray-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100">CORPORATE</a>
+          <a href="#" class="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1.5px] after:w-full after:origin-bottom after:scale-x-0 after:bg-gray-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100">BUSINESS SECTOR</a>
+          <a href="#" class="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1.5px] after:w-full after:origin-bottom after:scale-x-0 after:bg-gray-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100">BRANDS</a>
+          <a href="#" class="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1.5px] after:w-full after:origin-bottom after:scale-x-0 after:bg-gray-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100">INQUIRY</a>
+          <a href="#" class="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1.5px] after:w-full after:origin-bottom after:scale-x-0 after:bg-gray-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100">CAREER</a>
+          <a href="#" class="relative after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[1.5px] after:w-full after:origin-bottom after:scale-x-0 after:bg-gray-300 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom hover:after:scale-x-100">CONTACT US</a>
         </div>
         <div class="items-center hidden gap-4 lg:flex shrink-0">
-          <div>
-            <svg class="size-5 fill-white" viewBox="0 0 256 256">
-              <path
-                d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
-              ></path>
-            </svg>
-          </div>
+          <div><svg class="size-5 fill-white" viewBox="0 0 256 256"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path></svg></div>
           <div class="w-8 lg:w-12 h-[0.5px] bg-gray-300"></div>
-
           <div class="inline-flex gap-2">
-            <svg class="size-5 fill-white" viewBox="0 0 256 256">
-              <path
-                d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"
-              ></path>
-            </svg>
-            <svg class="size-5 fill-white" viewBox="0 0 256 256">
-              <path
-                d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"
-              ></path>
-            </svg>
+            <svg class="size-5 fill-white" viewBox="0 0 256 256"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"></path></svg>
+            <svg class="size-5 fill-white" viewBox="0 0 256 256"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"></path></svg>
           </div>
         </div>
       </nav>
-
-      <div
-        class="lg:container mx-auto xl:px-24 flex flex-col justify-center items-center text-center px-8 md:text-left md:items-start pb-50 md:pb-0 md:justify-center min-h-[calc(130px-100vh)] h-full"
-      >
-        <h3
-          class="text-[#4E87C7] px-4 font-sf text-5xl mb-4 md:text-4xl lg:text-5xl"
-        >
-          Quis <br />
-          dictum urna venenatis
-        </h3>
-        <p
-          class="text-white xl:min-w-250 lg:250 text-[15px] mt-2 font-sf min-h-25 leading-loose md:min-w-180 lg:max-w-md md:text-base lg:text-lg w-full px-4"
-        >
-          Ut at purus, ut facilisi eget nulla vivamus nullam. Volutpat est
-          lectus massa consectetur dictum lorem amet, enim nec. Ac dui, vitae
-          vulputate odio mattis quam nisi, amet pellentesque. Quam mauris in
-          tellus viverra hac diam vel, tellus tortor. Lacus commodo sit non
-          elementum dictum laoreet. Et sed volutpat nibh laoreet porttitor
-          faucibus.
+      <div class="lg:container mx-auto xl:px-24 flex flex-col justify-center items-center text-center px-8 md:text-left md:items-start pb-50 md:pb-0 md:justify-center min-h-[calc(100vh-130px)] h-full">
+        <h3 class="text-[#4E87C7] px-4 font-sf text-5xl mb-4 md:text-4xl lg:text-5xl">Quis <br />dictum urna venenatis</h3>
+        <p class="text-white xl:min-w-250 lg:250 text-[15px] mt-2 font-sf min-h-25 leading-loose md:min-w-180 lg:max-w-md md:text-base lg:text-lg w-full px-4">
+          Ut at purus, ut facilisi eget nulla vivamus nullam. Volutpat est lectus massa consectetur dictum lorem amet, enim nec. Ac dui, vitae vulputate odio mattis quam nisi, amet pellentesque. Quam mauris in tellus viverra hac diam vel, tellus tortor. Lacus commodo sit non elementum dictum laoreet. Et sed volutpat nibh laoreet porttitor faucibus.
         </p>
       </div>
     </main>
 
-    <section
-      class="bg-[url('./allbg.png')] bg-no-repeat bg-cover flex justify-center pt-10 items-center lg:pt-45 md:h-[100vh] mx-auto lg:h-[100vh]"
-    >
-      <div
-        class="flex flex-col lg:justify-center lg:pt-25 items-center md:items-end mx-auto lg:container px-[15px]"
-      >
-        <h3
-          class="text-[#4E87C7] text-4xl pb-9 pt-2 md:mx-auto ml-2 lg:w-screen xl:mx-20 lg:text-right lg:mx-10 xl:pl-12 md:mt-12"
-        >
-          Who Are We
-        </h3>
-
-        <p
-          class="text-[#FFFFFF] text-[19px] text-center mx-10 lg:mb-8 lg:text-right xl:px-12 pb-5 leading-loose md:text-[19px]"
-        >
-          Tellus aliquet id non auctor scelerisque. Lacus, lorem purus elit,
-          adipiscing quis dolor. Fermentum, lectus nunc auctor risus eu est
-          mauris id faucibus. Tellus aliquet id non auctor scelerisque.. Lacus,
-          lorem purus elit, adipiscing quis dolor.
+    <section class="bg-[url('./allbg.png')] bg-no-repeat bg-cover flex justify-center pt-10 items-center lg:pt-45 md:h-[100vh] mx-auto lg:h-[100vh] who-are-we">
+      <div class="flex flex-col lg:justify-center lg:pt-25 items-center md:items-end mx-auto lg:container px-[15px]">
+        <h3 class="text-[#4E87C7] text-4xl pb-9 pt-2 md:mx-auto ml-2 lg:w-screen xl:mx-20 lg:text-right lg:mx-10 xl:pl-12 md:mt-12">Who Are We</h3>
+        <p class="text-[#FFFFFF] text-[19px] text-center mx-10 lg:mb-8 lg:text-right xl:px-12 pb-5 leading-loose md:text-[19px]">
+          Tellus aliquet id non auctor scelerisque. Lacus, lorem purus elit, adipiscing quis dolor. Fermentum, lectus nunc auctor risus eu est mauris id faucibus. Tellus aliquet id non auctor scelerisque.. Lacus, lorem purus elit, adipiscing quis dolor.
         </p>
-
-        <div
-          class="flex flex-col items-center kase md:flex-col  pb-10 mx-auto mb-12 space-y-8 lg:flex-row lg:space-y-0 xl:mt-20 lg:space-x-8 xl:space-x-28 "
-        >
-        
-          <img
-            src="brandlogo.svg"
-            class="w-[200px] md:w-[250px] md:mt-12      lg:w-[200px] sad lg:mt-0"
-            alt=""
-          />
-          <img
-            src="brandlogo.svg"
-            class="w-[200px] md:w-[250px] lg:w-[200px] sad"
-            alt=""
-          />
-          <img
-            src="brandlogo.svg"
-            class="w-[200px] md:w-[250px] lg:w-[200px] sad"
-            alt=""
-          />
-          <img
-            src="brandlogo.svg"
-            class="w-[200px] md:w-[250px] lg:w-[200px] sad"
-            alt=""
-          />
+        <div class="flex flex-col items-center kase md:flex-col pb-10 mx-auto mb-12 space-y-8 lg:flex-row lg:space-y-0 xl:mt-20 lg:space-x-8 xl:space-x-28">
+          <img src="brandlogo.svg" class="w-[200px] md:w-[250px] md:mt-12 lg:w-[200px] sad lg:mt-0" alt="" />
+          <img src="brandlogo.svg" class="w-[200px] md:w-[250px] lg:w-[200px] sad" alt="" />
+          <img src="brandlogo.svg" class="w-[200px] md:w-[250px] lg:w-[200px] sad" alt="" />
+          <img src="brandlogo.svg" class="w-[200px] md:w-[250px] lg:w-[200px] sad" alt="" />
         </div>
       </div>
     </section>
 
-    <section
-      class="bg-[#141414] bg-no-repeat bg-cover flex justify-center pb-14 items-center mx-auto md:h-[100vh]"
-    >
-      <div
-        class="container mx-auto p-4 flex flex-col md:flex-row flex-col-reverse lg:max-w-[1141px] lg:h-[768px] max-w-[900px]"
-      >
-        <div
-          class="grid md:grid-cols-2 gap-0 md:w-full md:w-[600px] sm:grid-cols-2 sm:space-y-0 lg:w-[1441] mx-auto space-y-5 md:space-y-0"
-        >
-          <!-- Kart 1 -->
-          <div
-            class="relative bg-cover bg-center max-w-[300px] buyt lg:max-w-[380px] lg:h-[256px] md:w-full h-[200px] flex items-end justify-start p-4 bg-[url(./Img/Item.png)]"
-          >
+    <section class="bg-[#141414] bg-no-repeat bg-cover flex justify-center pb-14 items-center mx-auto md:h-[100vh]">
+      <div class="container mx-auto p-4 flex flex-col md:flex-row flex-col-reverse lg:max-w-[1141px] lg:h-[768px] max-w-[900px]">
+        <div class="grid md:grid-cols-2 gap-0 md:w-full md:w-[600px] sm:grid-cols-2 sm:space-y-0 lg:w-[1441] mx-auto space-y-5 md:space-y-0">
+          <div class="relative bg-cover bg-center max-w-[300px] buyt lg:max-w-[380px] lg:h-[256px] md:w-full h-[200px] flex items-end justify-start p-4 bg-[url(./Img/Item.png)]">
             <div class="absolute inset-0 bg-black/0"></div>
             <div class="relative z-10">
               <h3 class="mb-1 text-lg text-white">Tradex Petrolium</h3>
-              <a
-                href="#"
-                class="relative inline-block text-sm text-white no-underline group"
-              >
-                <span>VIEW MORE</span>
-                <span
-                  class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"
-                ></span>
-              </a>
+              <a href="#" class="relative inline-block text-sm text-white no-underline group"><span>VIEW MORE</span><span class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span></a>
             </div>
           </div>
-          <!-- Kart 2 -->
-          <div
-            class="relative bg-cover bg-center buyt max-w-[300px] lg:max-w-[380px] lg:h-[256px] md:w-full h-[200px] flex items-end justify-start p-4 cursor-pointer bg-[url(./Img/Item-1.png)]"
-          >
+          <div class="relative bg-cover bg-center buyt max-w-[300px] lg:max-w-[380px] lg:h-[256px] md:w-full h-[200px] flex items-end justify-start p-4 cursor-pointer bg-[url(./Img/Item-1.png)]">
             <div class="absolute inset-0 bg-black/0"></div>
             <div class="relative z-10">
               <h3 class="mb-1 text-lg text-white">Tradex FMCG</h3>
-              <a
-                href="#"
-                class="relative inline-block text-sm text-white no-underline group"
-              >
-                <span>VIEW MORE</span>
-                <span
-                  class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"
-                ></span>
-              </a>
+              <a href="#" class="relative inline-block text-sm text-white no-underline group"><span>VIEW MORE</span><span class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span></a>
             </div>
           </div>
-          <!-- Kart 3 -->
-          <div
-            class="relative bg-cover bg-center buyt max-w-[300px] lg:max-w-[380px] lg:h-[256px] md:w-full h-[200px] flex items-end justify-start p-4 cursor-pointer bg-[url(./Img/Item-2.png)]"
-          >
+          <div class="relative bg-cover bg-center buyt max-w-[300px] lg:max-w-[380px] lg:h-[256px] md:w-full h-[200px] flex items-end justify-start p-4 cursor-pointer bg-[url(./Img/Item-2.png)]">
             <div class="absolute inset-0 bg-black/0"></div>
             <div class="relative z-10">
               <h3 class="mb-1 text-lg text-white">Tradex Automotive</h3>
-              <a
-                href="#"
-                class="relative inline-block text-sm text-white no-underline group"
-              >
-                <span>VIEW MORE</span>
-                <span
-                  class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"
-                ></span>
-              </a>
+              <a href="#" class="relative inline-block text-sm text-white no-underline group"><span>VIEW MORE</span><span class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span></a>
             </div>
           </div>
-          <!-- Kart 4 -->
-          <div
-            class="relative bg-cover bg-center buyt max-w-[300px] lg:max-w-[380px] lg:h-[256px] md:w-full h-[200px] flex items-end justify-start p-4 cursor-pointer bg-[url(./Img/Item-3.png)]"
-          >
+          <div class="relative bg-cover bg-center buyt max-w-[300px] lg:max-w-[380px] lg:h-[256px] md:w-full h-[200px] flex items-end justify-start p-4 cursor-pointer bg-[url(./Img/Item-3.png)]">
             <div class="absolute inset-0 bg-black/0"></div>
             <div class="relative z-10">
               <h3 class="mb-1 text-lg text-white">Tradex Textile</h3>
-              <a
-                href="#"
-                class="relative inline-block text-sm text-white no-underline group"
-              >
-                <span>VIEW MORE</span>
-                <span
-                  class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"
-                ></span>
-              </a>
+              <a href="#" class="relative inline-block text-sm text-white no-underline group"><span>VIEW MORE</span><span class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span></a>
             </div>
           </div>
-          <!-- Kart 5 -->
-          <div
-            class="relative bg-cover bg-center buyt max-w-[300px] lg:max-w-[380px] lg:h-[256px] md:w-full h-[200px] flex items-end justify-start p-4 cursor-pointer bg-[url(./Img/Item-4.png)]"
-          >
+          <div class="relative bg-cover bg-center buyt max-w-[300px] lg:max-w-[380px] lg:h-[256px] md:w-full h-[200px] flex items-end justify-start p-4 cursor-pointer bg-[url(./Img/Item-4.png)]">
             <div class="absolute inset-0 bg-black/0"></div>
             <div class="relative z-10">
-              <h3 class="mb-1 text-lg text-white">
-                Tradex Technology Solution
-              </h3>
-              <a
-                href="#"
-                class="relative inline-block text-sm text-white no-underline group"
-              >
-                <span>VIEW MORE</span>
-                <span
-                  class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"
-                ></span>
-              </a>
+              <h3 class="mb-1 text-lg text-white">Tradex Technology Solution</h3>
+              <a href="#" class="relative inline-block text-sm text-white no-underline group"><span>VIEW MORE</span><span class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span></a>
             </div>
           </div>
-          <!-- Kart 6 -->
-          <div
-            class="relative bg-cover bg-center buyt max-w-[300px] lg:max-w-[380px] lg:h-[256px] md:w-full h-[200px] flex items-end justify-start p-4 cursor-pointer bg-[url(./Img/Item-5.png)]"
-          >
+          <div class="relative bg-cover bg-center buyt max-w-[300px] lg:max-w-[380px] lg:h-[256px] md:w-full h-[200px] flex items-end justify-start p-4 cursor-pointer bg-[url(./Img/Item-5.png)]">
             <div class="absolute inset-0 bg-black/0"></div>
             <div class="relative z-10">
               <h3 class="mb-1 text-lg text-white">Tradex Medical</h3>
-              <a
-                href="#"
-                class="relative inline-block text-sm text-white no-underline group"
-              >
-                <span>VIEW MORE</span>
-                <span
-                  class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"
-                ></span>
-              </a>
+              <a href="#" class="relative inline-block text-sm text-white no-underline group"><span>VIEW MORE</span><span class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span></a>
             </div>
           </div>
         </div>
-        <!-- Sidebar: Mobilde tam genişlik, md'de 300px, lg'de aynı kalabilir veya isteğe bağlı -->
-        <section
-          class="md:w-[381px] md:bg-[url(./img/bar.png)] lg:max-w-[381px] lg:h-[768px] flex flex-col items-center justify-center"
-        >
-          <h2
-            class="text-[#2aa6ff] text-[38px] min-w-60 md:px-5 text-center md:pl-53 md:text-right lg:text-right mb-6"
-          >
-            Our <br />Brands
-          </h2>
-          <p
-            class="mb-6 text-center text-white lg:text-right min-w-60 lg:px-6 orti md:text-right md:px-5"
-          >
-            Tellus aliquet id non auctor scelerisque. Lacus, lorem purus elit,
-            adipiscing quis dolor Fermentum, lectus nunc auctor risus eu est
-            mauris id faucibus. Tellus aliquet id non auctor scelerisque..
-            Lacus, lorem purus elit, adipiscing quis dolor.
+        <section class="md:w-[381px] md:bg-[url(./img/bar.png)] lg:max-w-[381px] lg:h-[768px] flex flex-col items-center justify-center our-brands">
+          <h2 class="text-[#2aa6ff] text-[38px] min-w-60 md:px-5 text-center md:pl-53 md:text-right lg:text-right mb-6">Our <br />Brands</h2>
+          <p class="mb-6 text-center text-white lg:text-right min-w-60 lg:px-6 orti md:text-right md:px-5">
+            Tellus aliquet id non auctor scelerisque. Lacus, lorem purus elit, adipiscing quis dolor Fermentum, lectus nunc auctor risus eu est mauris id faucibus. Tellus aliquet id non auctor scelerisque.. Lacus, lorem purus elit, adipiscing quis dolor.
           </p>
         </section>
       </div>
     </section>
 
-    <div class="bg-[#161616] relative">
-      <img
-        src="cws.png"
-        class="absolute top-0 left-0 object-cover object-center w-full h-full"
-        alt=""
-      />
-      <div
-        class="max-w-[320px] h-[200px] mx-auto sm:max-w-[498px] sm:mx-auto flex-col md:max-w-[600px] flex lg:max-w-[1110px] md:mx-auto items-center xl:flex-row xl:justify-between lg:justify-between lg:flex-row justify-center px-6 md:px-12 lg:px-24 relative z-10"
-      >
+    <div class="bg-[#161616] relative get-in-touch">
+      <img src="cws.png" class="absolute top-0 left-0 object-cover object-center w-full h-full" alt="" />
+      <div class="max-w-[320px] h-[200px] mx-auto sm:max-w-[498px] sm:mx-auto flex-col md:max-w-[600px] flex lg:max-w-[1110px] md:mx-auto items-center xl:flex-row xl:justify-between lg:justify-between lg:flex-row justify-center px-6 md:px-12 lg:px-24 relative z-10">
         <h2 class="text-xl text-white md:text-2xl">Get In Touch</h2>
         <div class="flex space-x-6">
-          <a href="#" class="relative inline-block text-white group">
-            <span>CALL NOW</span>
-            <span
-              class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"
-            ></span>
-          </a>
-          <a href="#" class="relative inline-block text-white group">
-            <span>SEND E-MAIL</span>
-            <span
-              class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"
-            ></span>
-          </a>
+          <a href="#" class="relative inline-block text-white group"><span>CALL NOW</span><span class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span></a>
+          <a href="#" class="relative inline-block text-white group"><span>SEND E-MAIL</span><span class="absolute bottom-0 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span></a>
         </div>
       </div>
     </div>
 
-    <div
-      class="bg-[#151515] text-white min-h-screen flex items-center justify-center p-10"
-    >
+    <div class="bg-[#151515] text-white min-h-screen flex items-center justify-center p-10">
       <div class="grid w-full max-w-6xl grid-cols-1 gap-10 md:grid-cols-2">
-        <!-- Sol Taraf (Başlık ve Açıklama) -->
         <div>
-          <div
-            class="flex items-center lg:flex md:items-end h-[25vh] space-x-4"
-          >
+          <div class="flex items-center lg:flex md:items-end h-[25vh] space-x-4">
             <h2 class="text-4xl font-semibold text-blue-400">Info</h2>
           </div>
           <p class="mt-4 leading-8 text-gray-400">
-            Ut at purus, ut facilisi eget nulla vivamus nullam. Volutpat est
-            lectus massa consectetur dictum lorem amet, enim nec. Ac dui, vitae
-            vulputate odio mattis quam nisi, amet pellentesque. Quam mauris in
-            tellus viverra hac diam vel, tellus tortor. Lacus commodo sit non
-            elementum dictum laoreet. Et sed volutpat nibh laoreet porttitor
-            faucibus.
+            Ut at purus, ut facilisi eget nulla vivamus nullam. Volutpat est lectus massa consectetur dictum lorem amet, enim nec. Ac dui, vitae vulputate odio mattis quam nisi, amet pellentesque. Quam mauris in tellus viverra hac diam vel, tellus tortor. Lacus commodo sit non elementum dictum laoreet. Et sed volutpat nibh laoreet porttitor faucibus.
           </p>
         </div>
-
-        <!-- Sağ Taraf (Akordeon) -->
         <div class="space-y-4">
-          <!-- Açık Accordion -->
           <div class="bg-[#191919] p-4 rounded-lg accordion">
-            <button
-              class="flex items-center justify-between w-full text-left accordion-btn"
-            >
-              <span
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus
-                eget hendrerit nisl erat?</span
-              >
+            <button class="flex items-center justify-between w-full text-left accordion-btn">
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus eget hendrerit nisl erat?</span>
               <span class="icon">-</span>
             </button>
             <p class="mt-2 text-gray-400 accordion-content">
-              Lectus vel pharetra sit proin diam dignissim hac. At metus, sit
-              ultrices ullamcorper elit, a. Vulputate sagittis interdum non
-              senectus habitant malesuada nisl et erat.
+              Lectus vel pharetra sit proin diam dignissim hac. At metus, sit ultrices ullamcorper elit, a. Vulputate sagittis interdum non senectus habitant malesuada nisl et erat.
             </p>
           </div>
-
-          <!-- Kapalı Akordeonlar -->
           <div class="bg-[#191919] p-4 rounded-lg accordion">
-            <button
-              class="flex items-center justify-between w-full text-left accordion-btn"
-            >
-              <span
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus
-                eget hendrerit nisl erat?</span
-              >
+            <button class="flex items-center justify-between w-full text-left accordion-btn">
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus eget hendrerit nisl erat?</span>
               <span class="icon">+</span>
             </button>
             <p class="hidden mt-2 text-gray-400 accordion-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus
-              eget hendrerit nisl erat?
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus eget hendrerit nisl erat?
             </p>
           </div>
-
           <div class="bg-[#191919] p-4 rounded-lg accordion">
-            <button
-              class="flex items-center justify-between w-full text-left accordion-btn"
-            >
-              <span
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus
-                eget hendrerit nisl erat?</span
-              >
+            <button class="flex items-center justify-between w-full text-left accordion-btn">
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus eget hendrerit nisl erat?</span>
               <span class="icon">+</span>
             </button>
             <p class="hidden mt-2 text-gray-400 accordion-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus
-              eget hendrerit nisl erat?
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus eget hendrerit nisl erat?
             </p>
           </div>
-
           <div class="bg-[#191919] p-4 rounded-lg accordion">
-            <button
-              class="flex items-center justify-between w-full text-left accordion-btn"
-            >
-              <span
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus
-                eget hendrerit nisl erat?</span
-              >
+            <button class="flex items-center justify-between w-full text-left accordion-btn">
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus eget hendrerit nisl erat?</span>
               <span class="icon">+</span>
             </button>
             <p class="hidden mt-2 text-gray-400 accordion-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus
-              eget hendrerit nisl erat?
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus eget hendrerit nisl erat?
             </p>
           </div>
-
           <div class="bg-[#191919] p-4 rounded-lg accordion">
-            <button
-              class="flex items-center justify-between w-full text-left accordion-btn"
-            >
-              <span
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus
-                eget hendrerit nisl erat?</span
-              >
+            <button class="flex items-center justify-between w-full text-left accordion-btn">
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus eget hendrerit nisl erat?</span>
               <span class="icon">+</span>
             </button>
             <p class="hidden mt-2 text-gray-400 accordion-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus
-              eget hendrerit nisl erat?
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus eget hendrerit nisl erat?
             </p>
           </div>
         </div>
@@ -504,122 +217,36 @@
     </div>
 
     <footer class="w-full bg-[#181818] text-white py-6 px-4 md:px-12">
-      <div
-        class="container flex flex-col items-center justify-between mx-auto md:flex-row"
-      >
-        <!-- Sol Kısım -->
-        <div class="flex items-center gap-4 pb-2 lg:pb-0">
-          <span class="text-2xl italic font-semibold"
-            ><img src="img/Logo.svg" alt=""
-          /></span>
-        </div>
-
-        <!-- Orta Kısım (İletişim) -->
-        <div class="text-center md:text-left">
-          <p class="text-sm">
-            +90 850 303 7441 |
-            <a href="mailto:merhaba@kumsalajans.com" class="hover:underline"
-              >merhaba@kumsalajans.com</a
-            >
-          </p>
-        </div>
-
-        <!-- Sağ Kısım ) -->
+      <div class="container flex flex-col items-center justify-between mx-auto md:flex-row">
+        <div class="flex items-center gap-4 pb-2 lg:pb-0"><span class="text-2xl italic font-semibold"><img src="img/Logo.svg" alt="" /></span></div>
+        <div class="text-center md:text-left"><p class="text-sm">+90 850 303 7441 | <a href="mailto:merhaba@kumsalajans.com" class="hover:underline">merhaba@kumsalajans.com</a></p></div>
         <div class="flex mt-4 space-x-4 md:mt-0">
-          <a href="#" class="p-1 bg-[#20202020] rounded-md hover:bg-gray-700">
-            <img
-              src="./img/facebook-svgrepo-com.svg"
-              alt="Facebook"
-              class="w-[40px]"
-            />
-          </a>
-          <a href="#" class="p-2 bg-[#20202020] rounded-md hover:bg-gray-700">
-            <img
-              src="./img/instagram-svgrepo-com.svg"
-              alt="Instagram"
-              class="w-10 h-10"
-            />
-          </a>
-          <a href="#" class="p-2 bg-[#20202020] rounded-md hover:bg-gray-700">
-            <img
-              src="./img/dasdsa.svg"
-              alt="LinkedIn"
-              class="w-[30px] h-[30px]"
-            />
-          </a>
+          <a href="#" class="p-1 bg-[#20202020] rounded-md hover:bg-gray-700"><img src="./img/facebook-svgrepo-com.svg" alt="Facebook" class="w-[40px]" /></a>
+          <a href="#" class="p-2 bg-[#20202020] rounded-md hover:bg-gray-700"><img src="./img/instagram-svgrepo-com.svg" alt="Instagram" class="w-10 h-10" /></a>
+          <a href="#" class="p-2 bg-[#20202020] rounded-md hover:bg-gray-700"><img src="./img/dasdsa.svg" alt="LinkedIn" class="w-[30px] h-[30px]" /></a>
         </div>
       </div>
-      <!-- Alt Çizgi -->
       <hr class="w-[85%] mx-auto border-gray-700 my-4" />
-
-      <!-- Alt Bilgi -->
-      <div
-        class="container flex flex-col items-center justify-between mx-auto text-sm text-gray-400 md:flex-row"
-      >
+      <div class="container flex flex-col items-center justify-between mx-auto text-sm text-gray-400 md:flex-row">
         <p>2021 © All Rights Reserved.</p>
-        <div class="flex space-x-6">
-          <a href="#" class="hover:underline">GDPR</a>
-          <a href="#" class="hover:underline">PRIVACY POLICY</a>
-        </div>
-        <div class="flex items-center gap-2 mt-2">
-          <span class="font-semibold text-white"
-            ><img src="img/KumsalLogo.svg" alt=""
-          /></span>
-        </div>
+        <div class="flex space-x-6"><a href="#" class="hover:underline">GDPR</a><a href="#" class="hover:underline">PRIVACY POLICY</a></div>
+        <div class="flex items-center gap-2 mt-2"><span class="font-semibold text-white"><img src="img/KumsalLogo.svg" alt="" /></span></div>
       </div>
     </footer>
 
-    <!-- Burger Menu -->
-    <div
-      id="burgerMenu"
-      class="fixed inset-0 z-50 hidden bg-black/20 backdrop-grayscale backdrop-blur-sm"
-    >
-      <div
-        class="flex items-center justify-center p-3 bg-linear-to-r from-green-600 via-blue-600 to-emerald-600 rounded-b-md"
-      >
-        <svg
-          class="absolute cursor-pointer size-6 fill-white top-12 right-6"
-          viewBox="0 0 256 256"
-          onclick="toggleMenu()"
-        >
-          <path
-            d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
-          ></path>
+    <div id="burgerMenu" class="fixed inset-0 z-50 hidden bg-black/20 backdrop-grayscale backdrop-blur-sm">
+      <div class="flex items-center justify-center p-3 bg-linear-to-r from-green-600 via-blue-600 to-emerald-600 rounded-b-md">
+        <svg class="absolute cursor-pointer size-6 fill-white top-12 right-6" viewBox="0 0 256 256" onclick="toggleMenu()">
+          <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
         </svg>
       </div>
-      <div
-        class="flex flex-col items-center justify-center h-full overflow-y-auto"
-      >
-        <a
-          href="#"
-          class="w-full py-3 mb-6 text-xl text-center text-white transition-all focus:bg-gray-100 focus:font-bold focus:tracking-wide focus:text-gray-800 focus:text-gray-300"
-          >CORPORATE</a
-        >
-        <a
-          href="#"
-          class="w-full py-3 mb-6 text-xl text-center text-white transition-all focus:bg-gray-100 focus:font-bold focus:tracking-wide focus:text-gray-800 focus:text-gray-300"
-          >BUSINESS SECTOR</a
-        >
-        <a
-          href="#"
-          class="w-full py-3 mb-6 text-xl text-center text-white transition-all focus:bg-gray-100 focus:font-bold focus:tracking-wide focus:text-gray-800 focus:text-gray-300"
-          >BRANDS</a
-        >
-        <a
-          href="#"
-          class="w-full py-3 mb-6 text-xl text-center text-white transition-all focus:bg-gray-100 focus:font-bold focus:tracking-wide focus:text-gray-800 focus:text-gray-300"
-          >INQUIRY</a
-        >
-        <a
-          href="#"
-          class="w-full py-3 mb-6 text-xl text-center text-white transition-all focus:bg-gray-100 focus:font-bold focus:tracking-wide focus:text-gray-800 focus:text-gray-300"
-          >CAREER</a
-        >
-        <a
-          href="#"
-          class="w-full py-3 mb-6 text-xl text-center text-white transition-all focus:bg-gray-100 focus:font-bold focus:tracking-wide focus:text-gray-800 focus:text-gray-300"
-          >CONTACT US</a
-        >
+      <div class="flex flex-col items-center justify-center h-full overflow-y-auto">
+        <a href="#" class="w-full py-3 mb-6 text-xl text-center text-white transition-all focus:bg-gray-100 focus:font-bold focus:tracking-wide focus:text-gray-800 focus:text-gray-300">CORPORATE</a>
+        <a href="#" class="w-full py-3 mb-6 text-xl text-center text-white transition-all focus:bg-gray-100 focus:font-bold focus:tracking-wide focus:text-gray-800 focus:text-gray-300">BUSINESS SECTOR</a>
+        <a href="#" class="w-full py-3 mb-6 text-xl text-center text-white transition-all focus:bg-gray-100 focus:font-bold focus:tracking-wide focus:text-gray-800 focus:text-gray-300">BRANDS</a>
+        <a href="#" class="w-full py-3 mb-6 text-xl text-center text-white transition-all focus:bg-gray-100 focus:font-bold focus:tracking-wide focus:text-gray-800 focus:text-gray-300">INQUIRY</a>
+        <a href="#" class="w-full py-3 mb-6 text-xl text-center text-white transition-all focus:bg-gray-100 focus:font-bold focus:tracking-wide focus:text-gray-800 focus:text-gray-300">CAREER</a>
+        <a href="#" class="w-full py-3 mb-6 text-xl text-center text-white transition-all focus:bg-gray-100 focus:font-bold focus:tracking-wide focus:text-gray-800 focus:text-gray-300">CONTACT US</a>
       </div>
     </div>
 
@@ -630,175 +257,41 @@
         menu.classList.toggle("hidden");
         body.classList.toggle("menu-open");
       }
-    </script>
 
-    <script>
       // Akordeon
       document.querySelectorAll(".accordion-btn").forEach((button) => {
         button.addEventListener("click", () => {
-          const accordion = button.closest(".accordion"); // En yakın akordeon öğesini bul
-          const content = accordion.querySelector(".accordion-content"); // İçerik öğesi
-          const icon = button.querySelector(".icon"); // Artı/eksi ikonu
-
-          // Eğer içerik açıksa kapat
-          if (!content.classList.contains("hidden")) {
-            gsap.to(content, {
-              height: 0,
-              opacity: 0,
-              duration: 0.3,
-              onComplete: () => content.classList.add("hidden"),
-            });
-            icon.textContent = "+";
-          } else {
-            // Önce tüm akordeonları kapat
-            document.querySelectorAll(".accordion-content").forEach((item) => {
-              if (item !== content) {
-                gsap.to(item, {
-                  height: 0,
-                  opacity: 0,
-                  duration: 0.3,
-                  onComplete: () => item.classList.add("hidden"),
-                });
-              }
-            });
-            document.querySelectorAll(".icon").forEach((i) => {
-              if (i !== icon) {
-                i.textContent = "+";
-              }
-            });
-
-            // Seçili olanı aç
-            gsap.fromTo(
-              content,
-              { height: 0, opacity: 0 },
-              {
-                height: "auto",
-                opacity: 1,
-                duration: 0.3,
-                onStart: () => content.classList.remove("hidden"),
-              }
-            );
+          const accordion = button.closest(".accordion");
+          const content = accordion.querySelector(".accordion-content");
+          const icon = button.querySelector(".icon");
+          document.querySelectorAll(".accordion-content").forEach((item) => {
+            if (item !== content && !item.classList.contains("hidden")) {
+              gsap.to(item, { height: 0, opacity: 0, duration: 0.3, onComplete: () => item.classList.add("hidden") });
+              item.previousElementSibling.querySelector(".icon").textContent = "+";
+            }
+          });
+          if (content.classList.contains("hidden")) {
+            gsap.fromTo(content, { height: 0, opacity: 0 }, { height: "auto", opacity: 1, duration: 0.3, onStart: () => content.classList.remove("hidden") });
             icon.textContent = "-";
+          } else {
+            gsap.to(content, { height: 0, opacity: 0, duration: 0.3, onComplete: () => content.classList.add("hidden") });
+            icon.textContent = "+";
           }
         });
       });
-    </script>
 
-    <script>
       // GSAP Animasyonları
       gsap.registerPlugin(ScrollTrigger);
+      gsap.from("nav, main h3, main p", { opacity: 0, y: 50, duration: 1, stagger: 0.3, delay: 0.5 });
+      gsap.from(".who-are-we h3, .who-are-we p", { opacity: 0, y: 50, duration: 1, stagger: 0.3, scrollTrigger: { trigger: ".who-are-we", start: "top 80%", end: "bottom 20%", toggleActions: "play none none reverse" } });
+      gsap.from(".our-brands h2, .our-brands p", { opacity: 0, y: 50, duration: 1, stagger: 0.3, scrollTrigger: { trigger: ".our-brands", start: "top 80%", end: "bottom 20%", toggleActions: "play none none reverse" } });
+      gsap.from(".buyt", { opacity: 0, y: 50, duration: 1, stagger: 0.2, scrollTrigger: { trigger: ".buyt", start: "top 80%", end: "bottom 20%", toggleActions: "play none none reverse" } });
+      gsap.from(".get-in-touch h2, .get-in-touch a", { opacity: 0, y: 50, duration: 1, stagger: 0.3, scrollTrigger: { trigger: ".get-in-touch", start: "top 80%", end: "bottom 20%", toggleActions: "play none none reverse" } });
 
-      // "Who Are We
-      gsap.from(".who-are-we h3, .who-are-we p", {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        stagger: 0.3,
-        scrollTrigger: {
-          trigger: ".who-are-we",
-          start: "top 80%",
-          end: "bottom 20%",
-          toggleActions: "play none none reverse",
-        },
-      });
-
-      // "Our Brands"
-      gsap.from(".our-brands h2, .our-brands p", {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        stagger: 0.3,
-        scrollTrigger: {
-          trigger: ".our-brands",
-          start: "top 80%",
-          end: "bottom 20%",
-          toggleActions: "play none none reverse",
-        },
-      });
-
-      // Kartlar için animasyon
-      gsap.from(".buyt", {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: ".buyt",
-          start: "top 80%",
-          end: "bottom 20%",
-          toggleActions: "play none none reverse",
-        },
-      });
-
-      // "Get In Touch"
-      gsap.from(".get-in-touch h2, .get-in-touch a", {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        stagger: 0.3,
-        scrollTrigger: {
-          trigger: ".get-in-touch",
-          start: "top 80%",
-          end: "bottom 20%",
-          toggleActions: "play none none reverse",
-        },
-      });
-    </script>
-    <script>
-      // VIEW MORE linkleri için hover animasyonu
+      // VIEW MORE hover animasyonu
       document.querySelectorAll(".buyt a").forEach((link) => {
-        link.addEventListener("mouseenter", () => {
-          gsap.to(link, {
-            borderBottomWidth: "2px",
-            duration: 0.3,
-            ease: "power2.out",
-          });
-        });
-
-        link.addEventListener("mouseleave", () => {
-          gsap.to(link, {
-            borderBottomWidth: "0px",
-            duration: 0.3,
-            ease: "power2.out",
-          });
-        });
-      });
-    </script>
-    <script>
-      // Akordeon animasyonları
-      document.querySelectorAll(".accordion-btn").forEach((button) => {
-        button.addEventListener("click", () => {
-          const content = button.nextElementSibling;
-          const icon = button.querySelector(".icon");
-
-          if (content.classList.contains("hidden")) {
-            gsap.to(content, {
-              height: "auto",
-              opacity: 1,
-              duration: 0.3,
-              onStart: () => content.classList.remove("hidden"),
-            });
-            icon.textContent = "-";
-          } else {
-            gsap.to(content, {
-              height: 0,
-              opacity: 0,
-              duration: 0.3,
-              onComplete: () => content.classList.add("hidden"),
-            });
-            icon.textContent = "+";
-          }
-        });
-      });
-    </script>
-    <script>
-      // Sayfa yüklendiğinde animasyon
-      gsap.from("nav, main h3, main p", {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        stagger: 0.3,
-        delay: 0.5,
+        link.addEventListener("mouseenter", () => { gsap.to(link.querySelector("span:last-child"), { width: "100%", duration: 0.3, ease: "power2.out" }); });
+        link.addEventListener("mouseleave", () => { gsap.to(link.querySelector("span:last-child"), { width: "0%", duration: 0.3, ease: "power2.out" }); });
       });
     </script>
   </body>
